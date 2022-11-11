@@ -1,2 +1,2 @@
 # headbutt
-simple hgss headbutt encounters editor
+hgss headbutt encounters editor
