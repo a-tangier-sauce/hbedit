@@ -12,6 +12,37 @@ int buildNarc(FILE * file){
 
 int main(int argc, char ** argv)
 {
+ 
+ 
+int main(int argc, char ** argv) {
+
+}
+
+//define vars and structs
+uint8_t numNormalTrees;
+uint8_t numSpecialTrees;
+
+typedef struct encounter {
+uint16_t pokeIndex;
+uint8_t minLvl;
+uint8_t maxLvl;
+} encounter; 
+
+typedef struct treeCoords{
+uint16_t coords[6][2];
+} treeCoords;
+
+//fetch number of trees
+
+
+//allocate stuff
+struct headbuttData {
+encounter normalEncounters[12];
+encounter specialEncounters[6];
+treeCoords normalTreeCoords[numNormalTrees];
+treeCoords specialTreeCoords[numNormalTrees];
+};
+ 
 //check if arg count is correct
  if(argc!=3){
   fprintf(stderr, "error: wrong number of arguments\nusage:\nheadbutt read [narcfile]\nheadbutt build [narcfile]\n");
